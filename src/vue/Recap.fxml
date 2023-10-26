@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0"
+	xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controleur.ControleurRecapitulatif">
+	<children>
+		<Button fx:id="fin" layoutX="318.0" layoutY="344.0"
+			mnemonicParsing="false" onAction="#onClickFin" text="Fin" />
+		<VBox layoutX="250.0" layoutY="78.0" prefHeight="200.0"
+			prefWidth="100.0">
+			<children>
+				<PieChart fx:id="chart" prefHeight="203.0"
+					prefWidth="264.0" />
+			</children>
+		</VBox>
+		<Text layoutX="36.0" layoutY="59.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Pour finir voici quelques conseils que vous pouvez appliquer : "
+			wrappingWidth="564.1993103027344">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Text>
+		<Text layoutX="43.0" layoutY="205.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Pensez à améliorer l'efficacité énergétique de votre maison, par exemple en installant des panneaux solaires ou en améliorant l'isolation."
+			wrappingWidth="310.5993347167969" />
+		<Text layoutX="43.0" layoutY="275.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Pensez à utiliser des moyens de transport alternatifs, tels que les transports en commun ou le vélo, ou à acheter un véhicule électrique ou hybride."
+			wrappingWidth="310.5993347167969" />
+		<Text layoutX="43.0" layoutY="157.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Pensez à acheter des produits plus durables et respectueux de l'environnement."
+			wrappingWidth="310.5993347167969" />
+		<Text layoutX="43.0" layoutY="101.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Pensez à réduire votre consommation de viande et à choisir des options à base de plantes."
+			wrappingWidth="310.5993347167969" />
+	</children>
+</AnchorPane>

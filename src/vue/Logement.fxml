@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0"
+	xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controleur.ControleurLogement">
+	<children>
+		<TextField fx:id="superficieField" layoutX="386.0"
+			layoutY="272.0" />
+		<Text layoutX="37.0" layoutY="227.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Quelle est la classe énergétique de votre logement ? "
+			wrappingWidth="310.5993347167969" />
+		<Text layoutX="37.0" layoutY="289.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Quelle est la superficie de votre logement ? "
+			wrappingWidth="310.5993347167969" />
+		<SplitMenuButton fx:id="classeEnergetiqueButton"
+			layoutX="386.0" layoutY="210.0" mnemonicParsing="false"
+			text="Choisissez votre classe énergétique" />
+		<Text layoutX="37.0" layoutY="91.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Commençons par quelques questions de base sur votre logement :"
+			wrappingWidth="556.1993103027344">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Text>
+		<Button fx:id="suivant" layoutX="606.0" layoutY="346.0"
+			mnemonicParsing="false" onMouseClicked="#onClickSuivant"
+			text="Suivant" />
+		<Button fx:id="retour" layoutX="23.0" layoutY="346.0"
+			mnemonicParsing="false" onMouseClicked="#onClickRetour" text="Retour" />
+		<Text layoutX="37.0" layoutY="168.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Où vivez-vous ? "
+			wrappingWidth="310.5993347167969" />
+		<CheckBox fx:id="villeCheckbox" layoutX="386.0"
+			layoutY="155.0" mnemonicParsing="false" text="Ville " />
+		<CheckBox fx:id="campagneCheckbox" layoutX="499.0"
+			layoutY="155.0" mnemonicParsing="false" text="Campagne" />
+	</children>
+</AnchorPane>

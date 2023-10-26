@@ -1,0 +1,6 @@
+Alimentation 0.4 0.6
+BienConso 100.0
+Logement 100 ville
+Logement 120 campagne
+Transport true P 200 10000
+Transport true G 2000 1000
